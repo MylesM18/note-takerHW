@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="jumbotron bg-dark" style='height:20vh;text-align: center;color:azure'><h1>Notetaker App</h1></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <button class="btn btn-danger" id="new">New Note</button>
+            </div>
+            
+            <div class="col-8" id='main' style="display:none">
+                <div class="form-group"><input type="text" id="titleInput" class="form-control" placeholder="Title">
+                <textarea class='form-control' id="mainText" rows="10"></textarea></div>
+                <button id="saveNote" class="btn btn-success" style='float:right'>Save Note</button>
+            </div>
+        </div>
+        <div class="row"></div>
+    </div>
+
+    <div class="accordion" id="accordionExample" style="margin-top: 10px;">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+               Saved Notes
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+              
+            </div>
+          </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
